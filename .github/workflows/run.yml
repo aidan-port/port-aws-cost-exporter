@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run
-        uses: docker://ghcr.io/port-labs/port-aws-cost-exporter:latest
+        uses: docker://ghcr.io/aidan-port/port-aws-cost-exporter:latest
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
